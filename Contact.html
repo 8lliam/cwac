@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact - École d'Exorcisme de Tokyo</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="stylesContact.css">
+        <!-- Lien vers la feuille de styles CSS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Viga&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 class="title">L'École d'Exorcisme de Tokyo</h1>
+            <ul class="navigation">
+                <li><a class="Acceuil" href="./index.html">Acceuil</a></li>
+                <li><a class="Formation" href="./Formation.html">Formation</a></li>
+                <li><a class="Contact" href="./Contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <main>
+            <section id="coordonnée">
+                <h2>Information et Contact</h2>
+                <p>Pour les inscriptions, questions, projets ou infos supplémentaires, remplissez ce formulaire ci-dessous. Un exorciste de notre école vous répondra dans les plus brefs délais !</p>
+                <p>E-mail: info@ecoleexorcismetokyo.fr</p>
+                <p>Numéro de téléphone :</p>
+                <ul>
+                    <li>Français : +33 6 98 20 14 16</li>
+                    <li>Japonais : +81 90-8554-3204</li>
+                </ul>
+                <div id="Location">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207360.30969936232!2d139.5989386580282!3d35.70149853168077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c5a5ecaa3c7%3A0x3e289ba925c800e6!2sZenkoku-ji%20Temple!5e0!3m2!1sfr!2sfr!4v1701159062595!5m2!1sfr!2sfr" 
+                        width="650" height="400" style="border: 5px solid #bdc3c7; border-radius: 15px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+            <section id="Formulaire">
+                <h2>Formulaire d'Inscription</h2>
+                <p>Rejoignez le monde des exorcistes ! Remplissez le formulaire ci-dessous :</p>
+                <form action="traitement_formulaire.php" method="post">
+                    <!-- Champs pour les informations personnelles -->
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                    <label for="dateNaissance">Date de Naissance :</label>
+                    <input type="date" id="dateNaissance" name="dateNaissance" required>
+                    <label for="nationalite">Nationalité :</label>
+                    <input type="text" id="nationalite" name="nationalite" required>
+                    <!-- Champs pour les coordonnées -->
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="telephone">Numéro de Téléphone :</label>
+                    <input type="tel" id="telephone" name="telephone" required>
+                    <label for="adresse">Adresse :</label>
+                    <textarea id="adresse" name="adresse" rows="4" required></textarea>
+                    <!-- Champ pour le message -->
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                    <!-- Bouton de soumission -->
+                    <input type="submit" value="Envoyer">
+                </form>
+            </section>
+            <!-- Contenu de la page de contact -->
+        </main>
+        <footer>
+            <p>Lim Steven | +33 6 82 39 28 92</p>
+            <p>Simion-Monfaitee  William | +33 6 25 82 55 79</p>
+			<a href="Rapport.odt">Le rapport format traitement de texte</a>
+			<p>La version pdf : <a href="Rapport.pdf">Ici</a></p>
+            <p>&copy; 2023 École d'Exorcisme de Tokyo</p>
+        </footer>
+    </body>
+</html>

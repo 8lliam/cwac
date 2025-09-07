@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/*----------Propriétés génrales afin de rendre les tableaux cohérent---------------*/
+
+table{	margin : auto; 
+		width: 100%;
+		border-collapse: collapse;  /* Fusion des cellules */  
+		color : black;
+		font-size:1.17em;
+}
+
+td {
+	padding: 10px;
+}
+
+th {
+	padding-bottom:7.5px;
+}
+
+tfoot{
+	text-align : center;
+	background-color : #bed8f3;
+	color : black; 
+	border-radius: 10px;
+}
+
+#BulleTableaux {
+	display:flex; /* Permet de faire des 3 tableaux des items appartenant à seul container */
+	align-items: baseline; /* Permet d'aligner les tableaux  */
+	padding: 30px 0 30px 0;
+	justify-content: center;
+	background-color: #95bce5;
+    border-radius: 5px;
+	
+}
+
+/*----------Partie dédiée à la partie ergonomique des tableaux--------- */
+
+.HeureAnnee {
+	margin: 0px 40px 0px 0px; /* Espacement entre toutes les tables*/
+	text-align:center
+	
+}
+
+.HeureAnnee tbody {
+	
+	display:block; /* Permet de faire de colonne une table unique */
+	border-style: none dotted; /* Propriete qui met les pointillé */
+	border-width: 5px; /* Taille des pointillé */	
+}
+
+.HeureAnnee thead tr{
+	background-color : white;
+}
+
+.HeureAnnee td{
+	font-weight:bold;
+	margin-left: auto;
+	margin-right: auto; 
+	width: 6em
+}
+
+#Enseignement {
+	text-align: right;
+	margin-right: 20px;
+	text-shadow: 2px 1px #ff9e9e;
+}
+
+#Enseignement td {
+	font-variant:small-caps;
+	font-weight:bold;	
+}
+
+/*----------Propriétés pour la description des années--------- */
+
+
+.NombreCredit {
+	font-size : 18pt;
+}
+
+.ImageCredit {
+	width: 30px; 
+    height: 30px; 
+	float:right;
+	margin : 0px;
+	padding : 0px;
+}
+
+.DeveloppementTitre {
+	font-size : 23pt;
+}
+
+.ImageEcole {
+	display:inline-flex;
+	flex-wrap : wrap;
+	justify-content : space-around;
+	width: auto; 
+    height: 200px; 
+	float:left;
+	border-radius: 50% 20% / 10% 40%; /* Proportion trouvé sur internet */
+	box-sizing: border-box;
+	padding: 5px;
+	margin-bottom:10px
+}
+
+.column {
+	float: left;
+}
+
+.Description {
+	float: left;
+	margin : auto;
+}

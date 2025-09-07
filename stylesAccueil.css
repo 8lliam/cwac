@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/* Style du conteneur du carrousel d'actualités */
+#carousel-container {
+    width: 100%; 
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center; 
+    background-color: #34495e; 
+    padding: 20px 0; 
+	margin-bottom: 15px;
+	
+}
+
+/* Style du carrousel d'actualités */
+#carousel {
+    display: flex; 
+    width: 100%; 
+    transition: transform 0.5s ease; 
+}
+
+/* Style de chaque actualité dans le carrousel */
+.news-item {
+    flex: 0 0 auto; 
+    margin-right: 20px; 
+    position: relative; 
+}
+
+/* Style des images dans le carrousel */
+#carousel img {
+    width: 100%; 
+    max-height: 200px; 
+    object-fit: cover; 
+}
+
+/* Style du texte sur les images du carrousel */
+#carousel p {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Viga', sans-serif;
+}
+
+/* Effet de défilement du carrousel au survol du conteneur */
+#carousel-container:hover #carousel {
+    transform: translateX(-20px); 
+}
+
+main {
+	background-image: url("image/ecole/11.jpg");
+	background-repeat: repeat;
+	background-attachment: fixed; /* Propriété qui fige l'image dans toute la zone dans laquel elle est situé */
+}

@@ -1,0 +1,62 @@
+
+/* Style de l'emplacement pour la localisation */
+#Location {
+    content: ''; 
+    margin: 20px;
+    text-align: center;
+    
+    
+}
+/* Style du formulaire d'inscription */
+#Formulaire {
+    padding-bottom: 20px;
+}
+
+#Formulaire h2 {
+    color: #2c3e50;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#Formulaire p {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Style des champs du formulaire */
+#Formulaire form {
+    display: grid;
+    gap: 15px;
+}
+
+#Formulaire label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+#Formulaire input,
+#Formulaire textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+}
+
+#Formulaire textarea {
+    resize: vertical;
+}
+
+#Formulaire input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+}
+
+#Formulaire input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
